@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Escribe tu nombre, profesion y pais de origen");
+        String entrada = teclado.nextLine();
+        String[] subcadena = entrada.split(" ");
+        System.out.println("nombre: " + subcadena[0].toUpperCase());
+        System.out.println("profesion: " + subcadena[1].toUpperCase());
+        System.out.println("pais: " + subcadena[2].toUpperCase());
+    }
+}
