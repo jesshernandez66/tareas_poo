@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce la cadena de 9 caracteres en mayúsculas X, O, _: ");
+        String entra = teclado.nextLine();//XOXOOXXO
+        int longuitud = entra.length();
+        char X = 'X';
+        char O = 'O';
+        char guion = '_';
+
+        if ((longuitud == 9) && (entra.charAt(0) == guion) || (entra.charAt(0) == X) || (entra.charAt(0) == O) && (entra.charAt(1) == guion) || (entra.charAt(1) == X) || (entra.charAt(1) == O) && (entra.charAt(2) == guion) || (entra.charAt(2) == X) || (entra.charAt(2) == O) && (entra.charAt(3) == guion) || (entra.charAt(3) == X) || (entra.charAt(3) == O) && (entra.charAt(4) == guion) || (entra.charAt(4) == X) || (entra.charAt(4) == O) && (entra.charAt(5) == guion) || (entra.charAt(5) == X) || (entra.charAt(5) == O) && (entra.charAt(6) == guion) || (entra.charAt(6) == X) || (entra.charAt(6) == O) && (entra.charAt(7) == guion) || (entra.charAt(7) == X) || (entra.charAt(7) == O) && (entra.charAt(8) == guion) || (entra.charAt(8) == X) || (entra.charAt(8) == O))
+        {
+            System.out.println("_____");
+            System.out.println("|" + entra.charAt(0) + entra.charAt(1) + entra.charAt(2) + "|");
+            System.out.println("|" + entra.charAt(3) + entra.charAt(4) + entra.charAt(5) + "|");
+            System.out.println("|" + entra.charAt(6) + entra.charAt(7) + entra.charAt(8) + "|");
+            System.out.println("_____");
+        }
+        else{
+            System.out.println("Este programa solo acepta cadenas de 9 caracteres en mayúsculas X, O, _ ");
+            }
+        }
+    }
+
+
+
