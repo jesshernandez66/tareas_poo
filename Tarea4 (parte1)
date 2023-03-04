@@ -1,0 +1,77 @@
+public class Casa {
+    //atributos
+    private int ventanas;
+    private int puertas;
+    private boolean television;
+    private int cocina;
+    private int baños;
+
+    //metodos constructores
+    public Casa() {
+    }
+    public Casa(int ventanas, int puertas, boolean television, int cocina, int baños) {
+        this.ventanas = ventanas;
+        this.puertas = puertas;
+        this.television = television;
+        this.cocina = cocina;
+        this.baños = baños;
+    }
+    //métodos de acceso
+
+    public int getVentanas() {
+        return ventanas;
+    }
+
+    public void setVentanas(int ventanas) {
+        this.ventanas = ventanas;
+    }
+
+    public int getPuertas() {
+        return puertas;
+    }
+
+    public void setPuertas(int puertas) {
+        this.puertas = puertas;
+    }
+
+    public boolean isTelevision() {
+        return television;
+    }
+
+    public void setTelevision(boolean television) {
+        this.television = television;
+    }
+
+    public int getCocina() {
+        return cocina;
+    }
+
+    public void setCocina(int cocina) {
+        this.cocina = cocina;
+    }
+
+    public int getBaños() {
+        return baños;
+    }
+
+    public void setBaños(int baños) {
+        this.baños = baños;
+    }
+    // método toString
+
+    @Override
+    public String toString() {
+        return "Casa{" +
+                "ventanas=" + ventanas +
+                ", puertas=" + puertas +
+                ", television=" + television +
+                ", cocina=" + cocina +
+                ", baños=" + baños +
+                '}';
+    }
+    //metodos de uso general
+    public boolean dormir;
+    public boolean abrirventana;
+    public boolean cocinar;
+
+}
