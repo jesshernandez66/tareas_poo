@@ -1,0 +1,86 @@
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        public class Perro {
+            //atributos
+            private String nombre;
+            private String raza;
+            private Color ojos;
+            private String pequeño_o_grande;
+            private int vacunas;
+
+            public Perro() {
+            }
+
+            //metodos constructores
+            public Perro(String nombre, String raza, Color ojos, String pequeño_o_grande, int vacunas) {
+                this.nombre = nombre;
+                this.raza = raza;
+                this.ojos = ojos;
+                this.pequeño_o_grande = pequeño_o_grande;
+                this.vacunas = vacunas;
+            }
+
+            //métodos de acceso
+            public String getNombre() {
+                return nombre;
+            }
+
+            public void setNombre(String nombre) {
+                this.nombre = nombre;
+            }
+
+            public String getRaza() {
+                return raza;
+            }
+
+            public void setRaza(String raza) {
+                this.raza = raza;
+            }
+
+            public Color getOjos() {
+                return ojos;
+            }
+
+            public void setOjos(Color ojos) {
+                this.ojos = ojos;
+            }
+
+            public String getPequeño_o_grande() {
+                return pequeño_o_grande;
+            }
+
+            public void setPequeño_o_grande(String pequeño_o_grande) {
+                this.pequeño_o_grande = pequeño_o_grande;
+            }
+
+            public int getVacunas() {
+                return vacunas;
+            }
+
+            public void setVacunas(int vacunas) {
+                this.vacunas = vacunas;
+            }
+
+            // método toString
+
+            @Override
+            public String toString() {
+                return "Perro{" +
+                        "nombre='" + nombre + '\'' +
+                        ", raza='" + raza + '\'' +
+                        ", ojos=" + ojos +
+                        ", pequeño_o_grande='" + pequeño_o_grande + '\'' +
+                        ", vacunas=" + vacunas +
+                        '}';
+            }
+            //metodos de uso general
+            private boolean caminar;
+            private boolean correr;
+            private boolean comer;
+            
+        }
+
+    }
+}
