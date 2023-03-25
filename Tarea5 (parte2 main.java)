@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class main{
+    //Le daremos valores de inicio a los atributos)
+    public static void main(String[] args) {
+        Cafe cafetera = new Cafe(5000, 1000, 1500, 50);
+        //Imprimiremos los valores actuales de los atributos
+        System.out.println("El estado actual de los recursos de la cafetera es: " + cafetera.getAgua() + " ml de agua, " + cafetera.getCafe() + " gr de cafe, " + cafetera.getCrema() + " ml de crema, y " + cafetera.getVasos() + " vasos");
+        //Mientras los valores de los atributos sean diferentes a cero, podremos iniciar el bucle de cafe
+        while ((cafetera.getAgua()>0)&(cafetera.getCafe()>0)&(cafetera.getCrema()>0)&(cafetera.getVasos()>0)) {
+            //Si la persona quiere hacer el café, le va a preguntar cual
+            System.out.println("Qué café quieres hacer?");
+            //opciones de cafes
+            System.out.println("Escribe 1 si deseas hacer un americano,escribe 2 si deseas hacer un expreso, escribe 3 si deseas hacer un capuchino");
+            Scanner sc = new Scanner(System.in);
+            int cafesitos = sc.nextInt();
+            switch (cafesitos) {
+                case 1:
+                    cafetera.americano();
+                    break;
+                case 2:
+                    cafetera.expreso();
+                    break;
+                case 3:
+                    cafetera.capuchino();
+                    break;
+                default:
+                    System.out.println("Número no válido");
+            }
+        }
+
+        System.out.println("¡¡¡El último café no se pudo completar, ya que no hay más insumos!!!");
+        }
+
+
+}
