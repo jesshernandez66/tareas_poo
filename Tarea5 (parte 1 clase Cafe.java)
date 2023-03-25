@@ -1,0 +1,101 @@
+public class Cafe {
+    private int agua;
+    private int cafe;
+    private int crema;
+    private int vasos;
+
+    public Cafe(int agua) {
+        this.agua = agua;
+    }
+
+    public Cafe(int agua, int cafe, int crema, int vasos) {
+        this.agua = agua;
+        this.cafe = cafe;
+        this.crema = crema;
+        this.vasos = vasos;
+    }
+
+    public int getAgua() {
+        return agua;
+    }
+
+    public void setAgua(int agua) {
+        this.agua = agua;
+    }
+
+    public int getCafe() {
+        return cafe;
+    }
+
+    public void setCafe(int cafe) {
+        this.cafe = cafe;
+    }
+
+    public int getCrema() {
+        return crema;
+    }
+
+    public void setCrema(int crema) {
+        this.crema = crema;
+    }
+
+    public int getVasos() {
+        return vasos;
+    }
+
+    public void setVasos(int vasos) {
+        this.vasos = vasos;
+    }
+
+    @Override
+    public String toString() {
+        return "Cafe{" +
+                "agua=" + agua +
+                ", cafe=" + cafe +
+                ", crema=" + crema +
+                ", vasos=" + vasos +
+                '}';
+    }
+    public int americano(){
+       int aguaamericano= getAgua()- 180;
+       int cafeamericano= getCafe()-15;
+       int vasosamericano= getVasos()-1;
+       setAgua(aguaamericano);
+       setCafe(cafeamericano);
+       setVasos(vasosamericano);
+      System.out.println("El estado actual del agua es: "+ aguaamericano);
+      System.out.println("El estado actual del cafe es: "+ cafeamericano);
+      System.out.println("El estado actual del la crema es: "+ getCrema());
+      System.out.println("El estado actual de los vasos es: "+ vasosamericano);
+      return 0;
+    }
+    public int expreso(){
+        int aguaexpreso= getAgua()-120;
+        int cafeexpreso= getCafe()-20;
+        int vasosexpreso= getVasos()-1;
+        setAgua(aguaexpreso);
+        setCafe(cafeexpreso);
+        setVasos(vasosexpreso);
+        System.out.println("El estado actual del agua es: "+ aguaexpreso);
+        System.out.println("El estado actual del cafe es: "+ cafeexpreso);
+        System.out.println("El estado actual del la crema es: "+ getCrema());
+        System.out.println("El estado actual de los vasos es: "+ vasosexpreso);
+        return 0;
+    }
+    public int capuchino(){
+        int aguacapuchino= getAgua()-100;
+        int cafecapuchino= getCafe()-14;
+        int cremacapuchino= getCrema()-70;
+        int vasoscapuchino= getVasos()-1;
+        setAgua(aguacapuchino);
+        setCafe(cafecapuchino);
+        setCrema(cremacapuchino);
+        setVasos(vasoscapuchino);
+        System.out.println("El estado actual del agua es: "+ aguacapuchino);
+        System.out.println("El estado actual del cafe es: "+ cafecapuchino);
+        System.out.println("El estado actual del la crema es: "+ getCrema());
+        System.out.println("El estado actual de los vasos es: "+ vasoscapuchino);
+        return 0;
+    }
+
+}
