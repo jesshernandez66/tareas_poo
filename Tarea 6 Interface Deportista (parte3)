@@ -1,0 +1,5 @@
+public interface Deportista {
+    public abstract int entrenar(); //Este ya es un método abstracto
+    public abstract boolean presentarCompetencia(String ubicacion);
+
+}
