@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+      AlumnoDeportistaArtista ada= new AlumnoDeportistaArtista();
+      ada.setNombre("Juanito");
+      ada.setArte("pintura");
+      ada.setDeporte("basquet");
+        System.out.println( ada);
+        ada.ensayar("oleo");
+        ada.entrenar();
+        ada.presentarCompetencia("Fes Aragón");
+    }
+
+
+}
